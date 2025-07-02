@@ -1,0 +1,54 @@
+==================================================
+Example Queries
+==================================================
+
+Question: What are the main topics in this data?
+Failed to send telemetry event CollectionQueryEvent: capture() takes 1
+positional argument but 3 were given
+Answer:  The main topics in this data include Smart Communication
+Modules (Smart Comm Module - Direct) usage, Account information
+(Account Number, City, State, Country), Customer Class details
+(Residential unit), and timestamps for creation, status update, and
+types of usages. Additionally, there are identifiers such as USAGE_ID,
+US_ID, MDM_SP_ID, AREA_CD, OFFICE_CD, and DEPARTMENT_CD that provide
+structure to the data. However, it should be noted that some fields
+like SERVICE_PROVIDER are empty, which may imply that this information
+is not relevant for these specific records or that it's left for
+future updates.
+
+Question: Can you summarize the key information?
+Answer: 1. The office and department are located in Central,
+specifically at QASIM ELECTRICITY-AN NABHANIYAH SERVICE CENTER, which
+is part of the QASSIM department.
+2. There are multiple instances (three) of a smart meter with Device
+Type Code SMD and Manufacturer CD ZIV-ALFANAR. The specific device ID
+for all these meters is 1000000000000, and their serial numbers start
+with AES2020.
+3. The billing cycle starts on November 4th, 2025, and lasts for an
+unspecified duration (indicated by CD 9).
+4. The head-end system for these meters is Schneider HES (SCHN).
+
+Question: Can you tell me how many Residential and Commercial
+customers are there?
+Answer:  I'm sorry for any confusion, but the provided data only shows
+information about residential customers. There is no information about
+commercial customers in this dataset.
+
+Question: What patterns do you see in the data?
+Answer: 1. The same usage ID (25700000000000) is associated with three
+different rows of data, each row representing a separate usage event
+for a specific account (30019975115).
+
+2. Each row also contains consistent information about the service
+type (SMDD - Smart Enabled Digital - Direct), service provider,
+customer class (Residential unit), and country (SA - South Africa).
+However, the city, state, MDM_SP_ID, area code, and office code are
+not provided for all rows.
+
+3. The usage status is consistently set to "Acknowledgement Received"
+(ACKRECEIVED) and the status update date time changes with each row,
+indicating that the status was updated at different times for each
+usage event.
+
+4. Creation date time is consistent across all rows, suggesting these
+records were created on the same day and time (2025-01-04 17:13:00).
